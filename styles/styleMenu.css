@@ -1,0 +1,99 @@
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar {
+  width: 20%;
+  background-color: lightgray;
+  border-radius: 10px;
+  height: 100vh;
+ /*  height: 100%; */
+  /* Estilos adicionales de la barra lateral */
+}
+
+#main {
+  width: 80%;
+  height: 100vh;
+ 
+  
+  /* Estilos adicionales del área principal */
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 800px; */ 
+   margin: 0 auto;  
+  height: 100%;
+  width: 100%;
+ 
+}
+
+
+
+#carpetas, #archivos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  flex: 1; 
+}
+
+
+
+div.carpeta, div.archivo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 150px;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+div.carpeta{
+  justify-content: end;
+}
+
+
+
+
+
+
+div.carpeta p, div.archivo p {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+  
+  
+  
+}
+
+
+ div.carpeta:hover, div.archivo:hover {
+  background-color: lightgrey;
+} 
+
+div .carpeta img, div .archivo img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
